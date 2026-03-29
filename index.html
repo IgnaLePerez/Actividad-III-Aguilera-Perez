@@ -3,31 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad III</title>
+    <title>Actividad III: Formularios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Actividad III: Formularios</h1>
+        <h1>ACTIVIDAD III: FORMULARIOS</h1>
     </header>
     <body>
-        <h2>Formulario de compra</h2>
-        <p>Complete el formulario para llevar a cabo la compra</p>
-        <form action="post">
-            Nombre Completo: <input type="text", placeholder="Nombre-Apellido"> <br/>
-            DNI: <input type="number", placeholder = "12345678"> <br/>
-            Fecha de nacimiento <input type="datetime" placeholder="DD-MM-AAAA"> <br/>
-            Método de pago:
-            <select name="Método de pago">
-                <option>Visa</option>
-                <option>Mastercard</option>
-                <option>Otro</option>
-            </select> 
-            <input type="submit" value="Comprar" >
-            <input type="reset" value="Reiniciar">
-            
-        </form>
-        //nombre y apellido, dni, domicilio, código postal, nacionalidad, sexo
+        <section>
+            <div>
+                <h2>Formulario de compra</h2>
+                <p>Complete el formulario para llevar a cabo la compra</p>
+                <form method="post" action="gracias.html">
+                    Nombre Completo: <input type="text" placeholder="Nombre-Apellido"> <br/>
+                    DNI: <input type="number" placeholder = "12345678"> <br/>
+                    Fecha de nacimiento <input type="datetime" placeholder="DD-MM-AAAA"> <br/>
+                    Método de pago:
+                    <select name="Método de pago">
+                        <option>Visa</option>
+                        <option>Mastercard</option>
+                        <option>Otro</option>
+                    </select> <br/>
+                    <input type="submit" value="Enviar " >
+                    <input type="reset" value="Reiniciar ">
+                </form>
+            </div>
+            <div>
+                <h2>Solicitud para envío de documentación</h2>
+                <p>Complete el formulario para llevar a cabo la entrega a domicilio</p>
+                <form method="post" action="gracias.html">
+                    Nombre completo: <input type="text" placeholder="Nombre-Apellido"> <br/>
+                    DNI: <input type="number" placeholder = "12345678"> <br/>
+                    Domicilio: <input type="text" placeholder="Calle, Número, Ciudad"> <br/>
+                    Código postal: <input type="number" placeholder="1234"> <br/>
+                    Nacionalidad: <input type="text" placeholder="Nacionalidad"> <br/>
+                    Sexo:
+                    <select name="Sexo">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Otro</option>
+                    </select> <br/>
+                    <input type="submit" value="Enviar " >
+                    <input type="reset" value="Reiniciar ">
+                </form>
+            </div>
+            <div>
+                <h2>Valorar atención recibida por el operador telefónico</h2>
+                <p>Complete el formulario para valorar la atención recibida por el operador telefónico</p>
+                <form method="post" action="gracias.html">
+                    Nombre completo: <input type="text" placeholder="Nombre-Apellido"> <br/>
+                    DNI: <input type="number" placeholder = "12345678"> <br/>
+                    Valoración general del servicio: <input type="range" min="1" max="10" step="1"> <br/>
+                    Recomendación:
+                    <select name="Recomendacion">
+                        <option>Muy buena</option>
+                        <option>Buena</option>
+                        <option>Intermedia</option>
+                        <option>Mala</option>
+                        <option>Muy mala</option>
+                    </select> <br/>
+                    Seleccióna si la opción corresponde a las cualidades del operados: <br/>
+                    <input type="checkbox"> Atento <br/>
+                    <input type="checkbox"> Amable <br/>
+                    <input type="checkbox"> Capaz <br/>
+                    Sugerencias: <br/>
+                    <textarea name="Sugerencias" cols="110" rows="4"></textarea> <br/>
+                    <input type="submit" value="Enviar " >
+                    <input type="reset" value="Reiniciar ">
+                </form>
+            </div> 
+        </section>
     </body>
     <footer>
         <p>Gracias por usar nuestra pagina!</p>
